@@ -12,9 +12,9 @@
 const AGRIMA_CONFIG = Object.freeze({
   storeName: 'Agrima Makeup Store',
   phone: '916394959688', // Store WhatsApp Contact (Country code + 10-digit mobile)
-  displayPhone: '+91 6394959688',
+  displayPhone: '+91 639495 9688',
   city: 'Lucknow, Uttar Pradesh',
-  studioAddress: 'Shop #4, Buddhesawar, Lucknow, UP',
+  studioAddress: 'Shop #4, Buddheswar, Lucknow, UP',
   timing: '10:00 AM – 8:00 PM (Monday – Sunday)',
   serviceMode: '100% In-Studio Only (Strictly No Home Services)',
 });
