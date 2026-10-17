@@ -11,10 +11,10 @@
 // ==========================================================================
 const AGRIMA_CONFIG = Object.freeze({
   storeName: 'Agrima Makeup Store',
-  phone: '919876543210', // Store WhatsApp Contact (Country code + 10-digit mobile)
-  displayPhone: '+91 98765 43210',
+  phone: '916394959688', // Store WhatsApp Contact (Country code + 10-digit mobile)
+  displayPhone: '+91 6394959688',
   city: 'Lucknow, Uttar Pradesh',
-  studioAddress: 'Shop #4, Gomti Nagar / Hazratganj Commercial Hub, Lucknow, UP',
+  studioAddress: 'Shop #4, Buddhesawar, Lucknow, UP',
   timing: '10:00 AM – 8:00 PM (Monday – Sunday)',
   serviceMode: '100% In-Studio Only (Strictly No Home Services)',
 });
@@ -550,17 +550,22 @@ const BeforeAfterSlider = {
     window.addEventListener('mouseup', stopDrag);
     window.addEventListener('mousemove', doDrag);
 
-    // Touch events
+    // Touch events — prevent vertical scroll only when actively dragging
     this.container.addEventListener('touchstart', (e) => {
       this.isDragging = true;
-      if (e.touches && e.touches[0]) this.updatePosition(e.touches[0]);
+      const touch = e.touches[0];
+      if (touch) this.updatePosition(touch);
     }, { passive: true });
 
-    window.addEventListener('touchend', stopDrag);
+    window.addEventListener('touchend', stopDrag, { passive: true });
+
     window.addEventListener('touchmove', (e) => {
       if (!this.isDragging) return;
-      if (e.touches && e.touches[0]) this.updatePosition(e.touches[0]);
-    }, { passive: true });
+      // Prevent page scroll while user drags the slider horizontally
+      e.preventDefault();
+      const touch = e.touches[0];
+      if (touch) this.updatePosition(touch);
+    }, { passive: false }); // passive:false allows preventDefault
   },
 
   updatePosition(event) {
