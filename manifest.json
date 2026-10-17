@@ -1,0 +1,16 @@
+{
+  "name": "Agrima Makeup Store",
+  "short_name": "Agrima Makeup",
+  "description": "Exclusive In-Studio Beauty Salon & Makeup Studio in Lucknow",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fdfbf9",
+  "theme_color": "#9e5b38",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%239e5b38'/><text x='50%' y='62%' font-family='serif' font-size='50' font-weight='bold' fill='%23ffffff' text-anchor='middle'>A</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrima Makeup Store | Exclusive In-Studio Beauty Salon in Lucknow</title>
+  
+  <!-- Security Headers & Metadata -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me https://api.whatsapp.com;">
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="Agrima Makeup Store — Lucknow's premier beauty studio offering Budget, Premium, and Bridal Makeup packages, Skincare, Threading, Waxing, and Mehndi art. 100% In-Studio experience.">
+  <meta name="keywords" content="Agrima Makeup Store, Beauty Parlour Lucknow, Bridal Makeup Lucknow, HD Makeup Lucknow, Airbrush Makeup Lucknow, Salon Hazratganj, Salon Gomti Nagar">
+  <meta name="author" content="Agrima Makeup Store">
+  <meta property="og:title" content="Agrima Makeup Store — Premium In-Studio Salon in Lucknow">
+  <meta property="og:description" content="Transparent pricing, hygienic vanity studio, and instant WhatsApp booking for all beauty and bridal services in Lucknow.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#9e5b38">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Google Fonts Preconnect for High Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar with Bilingual Switcher -->
+  <aside class="top-notice-bar" aria-label="Studio Policy Announcement">
+    <span data-i18n="topNotice">📍 Lucknow Studio Experience • Strictly In-Studio Only (No Home Visits)</span>
+    <span class="badge-studio" data-i18n="topBadge">Vanity Lighting & AC Comfort</span>
+    
+    <!-- Top Bar Language Switcher -->
+    <div class="lang-switcher-pill" role="group" aria-label="Language selection">
+      <span class="lang-opt active" data-lang="en">EN</span>
+      <span>|</span>
+      <span class="lang-opt" data-lang="hi">हिंदी</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Agrima Makeup Store Home">
+        <div class="brand-symbol" aria-hidden="true">A</div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">AGRIMA</span>
+          <span class="brand-subtitle" data-i18n="brandSubtitle">Makeup Store • Lucknow</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-nav" role="navigation" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#transformation" data-i18n="navTransformation">Transformation</a></li>
+          <li><a href="#quiz" data-i18n="navQuiz">Glam Finder</a></li>
+          <li><a href="#packages" data-i18n="navPackages">3 Main Packages</a></li>
+          <li><a href="#individualServices" data-i18n="navMenu">A La Carte Menu</a></li>
+          <li><a href="#policy" data-i18n="navPolicy">Studio Policy</a></li>
+          <li><a href="#hygiene" data-i18n="navHygiene">Hygiene Pledge</a></li>
+          <li><a href="#reviews" data-i18n="navReviews">Reviews</a></li>
+          <li><a href="#contact" data-i18n="navContact">Location & Hours</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Language Switcher Pill in Header -->
+        <div class="lang-header-pill" role="group" aria-label="Switch Language (English / हिंदी)">
+          <span style="font-size: 0.95rem;">🌐</span>
+          <span class="lang-opt active" data-lang="en">EN</span>
+          <span class="lang-opt" data-lang="hi">हिंदी</span>
+        </div>
+
+        <!-- Cart / Booking Builder Drawer Toggle -->
+        <button type="button" class="cart-toggle-btn" data-action="open-cart" aria-label="Open Booking Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge-count" id="cartBadgeCount" style="display: none;">0</span>
+        </button>
+
+        <!-- Direct WhatsApp CTA Button -->
+        <a href="#packages" class="btn-header-book">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span data-i18n="bookSlotBtn">Book Slot</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <span class="brand-title">AGRIMA</span>
+      <button type="button" id="closeMobileNav" class="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <!-- Mobile Language Toggle -->
+    <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; background: var(--surface-alt); padding: 8px 14px; border-radius: var(--radius-sm);">
+      <span style="font-size: 0.88rem; font-weight: 700;">🌐 Language / भाषा:</span>
+      <div class="lang-header-pill">
+        <span class="lang-opt active" data-lang="en">English</span>
+        <span class="lang-opt" data-lang="hi">हिंदी</span>
+      </div>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#transformation" data-i18n="navTransformation">Transformation</a></li>
+      <li><a href="#quiz" data-i18n="navQuiz">Glam Finder</a></li>
+      <li><a href="#packages" data-i18n="navPackages">3 Primary Packages</a></li>
+      <li><a href="#individualServices" data-i18n="navMenu">A La Carte Menu</a></li>
+      <li><a href="#policy" data-i18n="navPolicy">Studio Policy</a></li>
+      <li><a href="#hygiene" data-i18n="navHygiene">Hygiene & Safety</a></li>
+      <li><a href="#reviews" data-i18n="navReviews">Lucknow Reviews</a></li>
+      <li><a href="#contact" data-i18n="navContact">Contact & Hours</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <button type="button" class="btn-primary" style="width: 100%; justify-content: center;" data-action="open-cart">
+        View Booking Cart
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-blob" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content fade-up-element">
+          <div class="hero-badge-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="heroBadge">Lucknow's Established Beauty Studio • In-Studio Exclusive</span>
+          </div>
+          
+          <h1 class="hero-title" data-i18n="heroTitle">
+            Exquisite Beauty & Bridal Artistry Crafted In <span class="highlight-gold">Lucknow</span>
+          </h1>
+          
+          <p class="hero-desc" data-i18n="heroDesc">
+            Welcome to <strong>Agrima Makeup Store</strong>. Experience professional salon hygiene, shadowless vanity lighting, and transparent rates tailored to Lucknow. Explore our 3 signature categories — <em>Budget</em>, <em>Premium</em>, and <em>Bridal</em> — or curate your individual beauty ritual with instant WhatsApp booking.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#packages" class="btn-primary">
+              <span data-i18n="heroBtnExplore">Explore Packages & Pricing</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <a href="#quiz" class="btn-secondary">
+              <span style="font-size: 1.1rem;">✨</span>
+              <span data-i18n="navQuiz">Glam Finder Quiz</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <div class="trust-icon-box" aria-hidden="true">🏢</div>
+              <div class="trust-text">
+                <span data-i18n="trust1Title">100% In-Studio</span>
+                <span data-i18n="trust1Sub">No Home Visits</span>
+              </div>
+            </div>
+            
+            <div class="trust-item">
+              <div class="trust-icon-box" aria-hidden="true">✨</div>
+              <div class="trust-text">
+                <span data-i18n="trust2Title">Vanity Studio</span>
+                <span data-i18n="trust2Sub">Air-Conditioned Comfort</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon-box" aria-hidden="true">🛡️</div>
+              <div class="trust-text">
+                <span data-i18n="trust3Title">100% Sanitized</span>
+                <span data-i18n="trust3Sub">Sterilized Tools</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon-box" aria-hidden="true">💬</div>
+              <div class="trust-text">
+                <span data-i18n="trust4Title">Instant WhatsApp</span>
+                <span data-i18n="trust4Sub">Fast Confirmation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Card with 3D Tilt -->
+        <div class="hero-visual-card tilt-card fade-up-element">
+          <div class="hero-visual-header">
+            <div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 2px;">Popular Lucknow Favorites</h3>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Exact average rates • Zero hidden fees</p>
+            </div>
+            <span class="studio-loc-pill">Lucknow Studio</span>
+          </div>
+
+          <div class="quick-preview-list">
+            <div class="quick-preview-item">
+              <div class="preview-left">
+                <span class="preview-tag tag-budget">Budget</span>
+                <div>
+                  <div class="preview-name">Eyebrow Threading</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">10 mins • Precision organic thread</div>
+                </div>
+              </div>
+              <span class="preview-price">₹40</span>
+            </div>
+
+            <div class="quick-preview-item">
+              <div class="preview-left">
+                <span class="preview-tag tag-budget">Popular</span>
+                <div>
+                  <div class="preview-name">Party Makeup</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">45 mins • Base, eyes, simple hair</div>
+                </div>
+              </div>
+              <span class="preview-price">₹1,499</span>
+            </div>
+
+            <div class="quick-preview-item">
+              <div class="preview-left">
+                <span class="preview-tag tag-premium">Premium</span>
+                <div>
+                  <div class="preview-name">HD Party Makeup</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">60 mins • HD finish, lashes & party hair</div>
+                </div>
+              </div>
+              <span class="preview-price">₹2,999</span>
+            </div>
+
+            <div class="quick-preview-item">
+              <div class="preview-left">
+                <span class="preview-tag tag-bridal">Bridal</span>
+                <div>
+                  <div class="preview-name">Airbrush Bridal Makeup</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">3 hrs • 24hr Temptu silicone finish</div>
+                </div>
+              </div>
+              <span class="preview-price">₹14,999</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px; text-align: center;">
+            <a href="#packages" style="font-size: 0.85rem; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 6px;">
+              <span>View all 10+ categorized services</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Stats Counter Bar -->
+    <section class="stats-counter-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card tilt-card fade-up-element">
+            <span class="stat-icon" aria-hidden="true">👰</span>
+            <div class="stat-number" data-target="500" data-suffix="+">500+</div>
+            <div class="stat-label" data-i18n="stat1Label">Happy Lucknow Brides</div>
+          </div>
+
+          <div class="stat-card tilt-card fade-up-element">
+            <span class="stat-icon" aria-hidden="true">🛡️</span>
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label" data-i18n="stat2Label">Studio Sanitized Safety</div>
+          </div>
+
+          <div class="stat-card tilt-card fade-up-element">
+            <span class="stat-icon" aria-hidden="true">⭐</span>
+            <div class="stat-number" data-target="10" data-suffix="+">10+</div>
+            <div class="stat-label" data-i18n="stat3Label">Years Beauty Experience</div>
+          </div>
+
+          <div class="stat-card tilt-card fade-up-element">
+            <span class="stat-icon" aria-hidden="true">💎</span>
+            <div class="stat-number" data-target="4.9" data-suffix="★">4.9★</div>
+            <div class="stat-label" data-i18n="stat4Label">Client Satisfaction Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Before & After Makeover Transformation Slider -->
+    <section class="transformation-section" id="transformation">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="transEyebrow">Interactive Transformation</span>
+          <h2 class="section-title" data-i18n="transTitle">Real In-Studio Artistry Comparison</h2>
+          <p class="section-lead" data-i18n="transLead">
+            Drag the slider to see how professional Lucknow vanity lighting & HD bridal makeup transforms your look.
+          </p>
+        </header>
+
+        <!-- Interactive Drag Slider Container -->
+        <div class="ba-slider-container fade-up-element" id="baSliderContainer">
+          <div class="ba-image-wrapper">
+            
+            <!-- BEFORE LAYER (Base Underneath) -->
+            <div class="ba-layer ba-layer-before">
+              <span class="ba-tag ba-tag-before" data-i18n="transBefore">Before (Bare Prep)</span>
+              <img src="images/bride_before.jpg" alt="Lucknow Bride Before Makeover - Studio Bare Skin Prep" class="ba-photo ba-photo-before" loading="eager" decoding="async">
+            </div>
+
+            <!-- AFTER LAYER (Revealed by sliding) -->
+            <div class="ba-layer ba-layer-after" id="baLayerAfter">
+              <span class="ba-tag ba-tag-after" data-i18n="transAfter">After (Studio HD Glam)</span>
+              <img src="images/bride_after.jpg" alt="Lucknow Bride After Royal HD Bridal Makeover" class="ba-photo ba-photo-after" loading="eager" decoding="async">
+            </div>
+
+            <!-- Draggable Handle -->
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle-button" aria-label="Drag slider">
+                <span>◀ || ▶</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ba-controls-hint">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          <span data-i18n="transHint">Slide or drag the handle to compare Before & After</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive "Find Your Perfect Look" Matcher / Glam Quiz -->
+    <section class="quiz-section" id="quiz">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="quizEyebrow">Interactive Matcher</span>
+          <h2 class="section-title" data-i18n="quizTitle">Find Your Perfect Dream Look</h2>
+          <p class="section-lead" data-i18n="quizLead">
+            Answer 2 quick questions to get an instant tailored package recommendation with Lucknow rates.
+          </p>
+        </header>
+
+        <div class="quiz-card tilt-card fade-up-element">
+          <!-- Step Indicator -->
+          <div class="quiz-progress-bar">
+            <div class="quiz-step-dot active" id="quizDot1">1</div>
+            <div class="quiz-step-line"></div>
+            <div class="quiz-step-dot" id="quizDot2">2</div>
+            <div class="quiz-step-line"></div>
+            <div class="quiz-step-dot" id="quizDot3">3</div>
+          </div>
+
+          <!-- Step 1: Occasion -->
+          <div id="quizStep1">
+            <h3 class="quiz-question-title" data-i18n="quizQ1Title">Step 1: What is the Occasion?</h3>
+            <p class="quiz-question-sub" data-i18n="quizQ1Sub">Choose the event you're preparing for</p>
+
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-option-btn" data-quiz-step="1" data-value="wedding">
+                <span class="quiz-opt-icon">👰</span>
+                <span class="quiz-opt-title">Wedding / Bridal</span>
+                <span class="quiz-opt-desc">Full bridal makeover with jewelry & draping</span>
+              </button>
+
+              <button type="button" class="quiz-option-btn" data-quiz-step="1" data-value="engagement">
+                <span class="quiz-opt-icon">💍</span>
+                <span class="quiz-opt-title">Engagement / Roka</span>
+                <span class="quiz-opt-desc">Soft glam, curls & elegant designer draping</span>
+              </button>
+
+              <button type="button" class="quiz-option-btn" data-quiz-step="1" data-value="party">
+                <span class="quiz-opt-icon">💃</span>
+                <span class="quiz-opt-title">Party / Sangeet</span>
+                <span class="quiz-opt-desc">HD party base, defined eyes & festive hair</span>
+              </button>
+
+              <button type="button" class="quiz-option-btn" data-quiz-step="1" data-value="routine">
+                <span class="quiz-opt-icon">🌿</span>
+                <span class="quiz-opt-title">Skincare / Grooming</span>
+                <span class="quiz-opt-desc">Facial, cleanup, threading & skin therapy</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Desired Finish -->
+          <div id="quizStep2" style="display: none;">
+            <h3 class="quiz-question-title" data-i18n="quizQ2Title">Step 2: What is your Desired Finish?</h3>
+            <p class="quiz-question-sub" data-i18n="quizQ2Sub">Select your dream look and makeup intensity</p>
+
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-option-btn" data-quiz-step="2" data-value="airbrush">
+                <span class="quiz-opt-icon">✨</span>
+                <span class="quiz-opt-title">24hr Airbrush Finish</span>
+                <span class="quiz-opt-desc">Ultra-light micro silicone, tear-proof & high glam</span>
+              </button>
+
+              <button type="button" class="quiz-option-btn" data-quiz-step="2" data-value="hd">
+                <span class="quiz-opt-icon">📸</span>
+                <span class="quiz-opt-title">HD Camera-Ready</span>
+                <span class="quiz-opt-desc">Sculpted contour, lashes & high-definition look</span>
+              </button>
+
+              <button type="button" class="quiz-option-btn" data-quiz-step="2" data-value="radiant">
+                <span class="quiz-opt-icon">🌸</span>
+                <span class="quiz-opt-title">Natural Dewy Glow</span>
+                <span class="quiz-opt-desc">Fresh radiant skin with soft romantic accents</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result View -->
+          <div id="quizResultView" class="quiz-result-view">
+            <div class="quiz-result-box">
+              <span class="result-badge" id="quizResultCat">👑 Bridal Services</span>
+              <h3 class="result-service-name" id="quizResultName">Airbrush Bridal Makeup</h3>
+              <div class="result-price-tag" id="quizResultPrice">₹14,999</div>
+              <p class="result-desc" id="quizResultDesc">
+                Flawless 24-hr Temptu silicone finish, tear-proof, sweat-proof, and designed for 4K wedding videography.
+              </p>
+
+              <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                <button type="button" class="btn-primary" id="quizResultBookWa">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/></svg>
+                  <span data-i18n="quizBookWa">Book This Look via WhatsApp</span>
+                </button>
+                <button type="button" class="btn-secondary" id="quizResultAddCart">
+                  <span data-i18n="quizAddCart">+ Add to My Booking</span>
+                </button>
+              </div>
+            </div>
+
+            <button type="button" id="quizRetryBtn" style="font-size: 0.88rem; font-weight: 700; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+              <span data-i18n="quizRetry">↺ Find Another Look</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Policy Callout Banner -->
+    <section class="policy-banner-section" id="policy" aria-labelledby="policy-heading">
+      <div class="container">
+        <div class="policy-card fade-up-element">
+          <div style="display: flex; align-items: center; gap: 18px; text-align: left;">
+            <div class="policy-icon-badge" aria-hidden="true">🏛️</div>
+            <div>
+              <h2 id="policy-heading" class="policy-heading" data-i18n="policyTitle">Why Agrima Makeup Store is Strictly 100% In-Studio</h2>
+              <p class="policy-subtext" data-i18n="policyDesc">
+                To guarantee flawless makeup longevity and hospital-grade hygiene, all services are delivered exclusively at our Lucknow studio. We do not provide home visits.
+              </p>
+            </div>
+          </div>
+          
+          <div class="policy-features-grid">
+            <div class="policy-feat-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="feat1">Shadowless 5500K Studio Vanity Lighting</span>
+            </div>
+            <div class="policy-feat-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="feat2">Climate-Controlled AC (Sweat-Proof Finish)</span>
+            </div>
+            <div class="policy-feat-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="feat3">UV-Sterilized Brushes & Tools</span>
+            </div>
+            <div class="policy-feat-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="feat4">Quiet, Luxurious & Private Salon Sanctuary</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Primary Categories Section (Budget, Premium, Bridal) -->
+    <section class="categories-section" id="packages">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="catEyebrow">Signature Offerings</span>
+          <h2 class="section-title" data-i18n="catTitle">The 3 Signature Service Categories</h2>
+          <p class="section-lead" data-i18n="catLead">
+            Curated beauty packages with exact Lucknow pricing. You can book an entire category or add specific services to your personal cart.
+          </p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs-wrapper fade-up-element">
+          <div class="category-tabs" role="tablist" aria-label="Category Navigation">
+            <button type="button" class="tab-btn active" data-target="all" role="tab" data-i18n="tabAll">All Categories</button>
+            <button type="button" class="tab-btn" data-target="budget" role="tab" data-i18n="tabBudget">🟢 Budget Services</button>
+            <button type="button" class="tab-btn" data-target="premium" role="tab" data-i18n="tabPremium">⭐ Premium Services</button>
+            <button type="button" class="tab-btn" data-target="bridal" role="tab" data-i18n="tabBridal">👑 Bridal Services</button>
+            <button type="button" class="tab-btn" data-target="alacarte" role="tab" data-i18n="tabAlacarte">💅 A La Carte Menu</button>
+          </div>
+        </div>
+
+        <!-- 3 Major Category Pillars with 3D Tilt -->
+        <div class="category-pillars-grid">
+          
+          <!-- Pillar 1: Budget Services -->
+          <article class="pillar-card card-budget tilt-card fade-up-element" id="pillarBudget">
+            <div class="pillar-card-header">
+              <span class="pillar-badge badge-budget">Everyday Glamour</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--emerald);">From ₹30</span>
+            </div>
+            <h3 class="pillar-title">Budget Services</h3>
+            <p class="pillar-subtitle">High-quality, prompt grooming and fresh party looks for every day.</p>
+
+            <ul class="pillar-services-list">
+              <!-- Item 1 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Eyebrow Threading</span>
+                  <span class="service-meta">10 mins • Organic thread shaping</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹40</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="bg_eyebrow" data-service-name="Eyebrow Threading" data-service-price="40" data-service-cat="Budget Services" aria-label="Add Eyebrow Threading">+</button>
+                </div>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Upper Lip Threading</span>
+                  <span class="service-meta">5 mins • Gentle grooming</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹30</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="bg_upperlip" data-service-name="Upper Lip Threading" data-service-price="30" data-service-cat="Budget Services" aria-label="Add Upper Lip Threading">+</button>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Basic Cleanup</span>
+                  <span class="service-meta">30 mins • Cleansing, scrub, steam & pack</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹399</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="bg_cleanup" data-service-name="Basic Cleanup" data-service-price="399" data-service-cat="Budget Services" aria-label="Add Basic Cleanup">+</button>
+                </div>
+              </li>
+
+              <!-- Item 4 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Basic Facial</span>
+                  <span class="service-meta">45 mins • Deep relaxation & herbal glow</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹599</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="bg_facial" data-service-name="Basic Facial" data-service-price="599" data-service-cat="Budget Services" aria-label="Add Basic Facial">+</button>
+                </div>
+              </li>
+
+              <!-- Item 5 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Party Makeup</span>
+                  <span class="service-meta">45 mins • Radiant base, eyes & lipstick</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹1,499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="bg_party" data-service-name="Party Makeup" data-service-price="1499" data-service-cat="Budget Services" aria-label="Add Party Makeup">+</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pillar-card-footer">
+              <button type="button" class="btn-book-category" data-action="quick-book-wa" data-service-name="Budget Services Package" data-service-price="1499" data-service-cat="Budget Services">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/></svg>
+                <span>Book Budget Service via WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Premium Services -->
+          <article class="pillar-card card-premium tilt-card fade-up-element" id="pillarPremium">
+            <div class="pillar-card-header">
+              <span class="pillar-badge badge-premium">Signature Luxury</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #8e680a;">From ₹1,499</span>
+            </div>
+            <h3 class="pillar-title">Premium Services</h3>
+            <p class="pillar-subtitle">Advanced rejuvenating skincare, HD party glam, and engagement elegance.</p>
+
+            <ul class="pillar-services-list">
+              <!-- Item 1 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Premium Facial</span>
+                  <span class="service-meta">60 mins • Intensive brightening & revitalization</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹1,499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="pm_facial" data-service-name="Premium Facial" data-service-price="1499" data-service-cat="Premium Services" aria-label="Add Premium Facial">+</button>
+                </div>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">HD Party Makeup</span>
+                  <span class="service-meta">60 mins • High-definition finish, lashes & hair styling</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹2,999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="pm_hdparty" data-service-name="HD Party Makeup" data-service-price="2999" data-service-cat="Premium Services" aria-label="Add HD Party Makeup">+</button>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Engagement Makeup</span>
+                  <span class="service-meta">75 mins • Radiant soft glam, hairstyle, lashes & draping</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹4,999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="pm_engage" data-service-name="Engagement Makeup" data-service-price="4999" data-service-cat="Premium Services" aria-label="Add Engagement Makeup">+</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pillar-card-footer">
+              <button type="button" class="btn-book-category" data-action="quick-book-wa" data-service-name="Premium Services Package" data-service-price="2999" data-service-cat="Premium Services">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/></svg>
+                <span>Book Premium via WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Pillar 3: Bridal Services -->
+          <article class="pillar-card card-bridal tilt-card fade-up-element" id="pillarBridal">
+            <div class="pillar-card-header">
+              <span class="pillar-badge badge-bridal">Royal Bridal Suite</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--maroon);">From ₹7,999</span>
+            </div>
+            <h3 class="pillar-title">Bridal Services</h3>
+            <p class="pillar-subtitle">Complete wedding transformations: hair, jewelry setting, lashes & dupatta draping.</p>
+
+            <ul class="pillar-services-list">
+              <!-- Item 1 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Basic Bridal Makeup</span>
+                  <span class="service-meta">2 hrs • Traditional look, draping, hairstyle & lashes</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹7,999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="br_basic" data-service-name="Basic Bridal Makeup" data-service-price="7999" data-service-cat="Bridal Services" aria-label="Add Basic Bridal Makeup">+</button>
+                </div>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">HD Bridal Makeup</span>
+                  <span class="service-meta">2.5 hrs • Waterproof HD base, jewelry setting & contouring</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹11,999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="br_hd" data-service-name="HD Bridal Makeup" data-service-price="11999" data-service-cat="Bridal Services" aria-label="Add HD Bridal Makeup">+</button>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="service-item-row">
+                <div class="service-info">
+                  <span class="service-title">Airbrush Bridal Makeup</span>
+                  <span class="service-meta">3 hrs • 24hr Temptu silicone finish, tear-proof & high glam</span>
+                </div>
+                <div class="service-pricing-action">
+                  <span class="service-price-tag">₹14,999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="br_airbrush" data-service-name="Airbrush Bridal Makeup" data-service-price="14999" data-service-cat="Bridal Services" aria-label="Add Airbrush Bridal Makeup">+</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pillar-card-footer">
+              <button type="button" class="btn-book-category" data-action="quick-book-wa" data-service-name="Bridal Makeup Consultation" data-service-price="11999" data-service-cat="Bridal Services">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/></svg>
+                <span>Book Bridal via WhatsApp</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Services Menu (A La Carte Departments) -->
+    <section class="individual-services-section" id="individualServices">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="alacarteEyebrow">A La Carte Menu</span>
+          <h2 class="section-title" data-i18n="alacarteTitle">Individual Salon Departments</h2>
+          <p class="section-lead" data-i18n="alacarteLead">
+            Select standalone services to combine or book on their own. Click the <strong>+</strong> button on any service to add it to your custom WhatsApp booking cart.
+          </p>
+        </header>
+
+        <div class="dept-grid">
+          
+          <!-- Dept 1: Threading & Waxing -->
+          <div class="dept-card tilt-card fade-up-element">
+            <div class="dept-header">
+              <div class="dept-icon-circle" aria-hidden="true">✂️</div>
+              <div>
+                <h3 class="dept-title">Threading & Waxing</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Painless organic shaping & gentle waxing</span>
+              </div>
+            </div>
+
+            <div class="dept-items-list">
+              <div class="alacarte-item">
+                <span class="alacarte-name">Eyebrow Threading</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹40</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_eyebrow" data-service-name="Eyebrows" data-service-price="40" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Upper Lips Threading</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹30</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_upperlip" data-service-name="Upper Lips" data-service-price="30" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Full Face Threading</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹150</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_fullface" data-service-name="Full Face Threading" data-service-price="150" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Underarms Waxing</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹99</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_underarms" data-service-name="Underarms Waxing" data-service-price="99" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Full Arms Waxing (Honey)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹299</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_fullarms" data-service-name="Full Arms Waxing (Honey)" data-service-price="299" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Full Legs Waxing (Honey)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹399</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_fulllegs" data-service-name="Full Legs Waxing (Honey)" data-service-price="399" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Full Body Waxing Combo</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹999</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_fullbody" data-service-name="Full Body Waxing Combo" data-service-price="999" data-service-cat="Threading & Waxing">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dept 2: Facial & Skincare -->
+          <div class="dept-card tilt-card fade-up-element">
+            <div class="dept-header">
+              <div class="dept-icon-circle" aria-hidden="true">🌿</div>
+              <div>
+                <h3 class="dept-title">Facial & Skincare</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Deep cleansing, D-Tan and luxury glow</span>
+              </div>
+            </div>
+
+            <div class="dept-items-list">
+              <div class="alacarte-item">
+                <span class="alacarte-name">Basic Fruit / Herbal Cleanup</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹399</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_skincleanup" data-service-name="Basic Fruit/Herbal Cleanup" data-service-price="399" data-service-cat="Facial & Skincare">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Basic Glow Facial</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹599</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_basicglow" data-service-name="Basic Glow Facial" data-service-price="599" data-service-cat="Facial & Skincare">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Anti-Tan / D-Tan Pack (Face & Neck)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹349</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_dtan" data-service-name="Anti-Tan / D-Tan Pack" data-service-price="349" data-service-cat="Facial & Skincare">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Gold Radiance Treatment</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹1,199</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_goldfacial" data-service-name="Gold Radiance Treatment" data-service-price="1199" data-service-cat="Facial & Skincare">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Premium Glow / Whitening Facial</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹1,499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_premglow" data-service-name="Premium Glow / Whitening Facial" data-service-price="1499" data-service-cat="Facial & Skincare">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dept 3: Hair Styling & Care -->
+          <div class="dept-card tilt-card fade-up-element">
+            <div class="dept-header">
+              <div class="dept-icon-circle" aria-hidden="true">💇‍♀️</div>
+              <div>
+                <h3 class="dept-title">Hair Styling & Care</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Blowdry, tong curls, updos & hair spas</span>
+              </div>
+            </div>
+
+            <div class="dept-items-list">
+              <div class="alacarte-item">
+                <span class="alacarte-name">Blowdry & Setting</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹299</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_blowdry" data-service-name="Blowdry & Setting" data-service-price="299" data-service-cat="Hair Styling & Care">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Party Curls / Tong Styling</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_curls" data-service-name="Party Curls / Tong Styling" data-service-price="499" data-service-cat="Hair Styling & Care">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Hair Straightening (Ironing)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_straighten" data-service-name="Hair Straightening (Ironing)" data-service-price="499" data-service-cat="Hair Styling & Care">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Designer Bridal / Party Bun / Updo</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹699</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_updo" data-service-name="Designer Bridal/Party Bun/Updo" data-service-price="699" data-service-cat="Hair Styling & Care">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">L'Oreal Deep Conditioning Hair Spa</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹899</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_hairspa" data-service-name="L'Oreal Deep Conditioning Hair Spa" data-service-price="899" data-service-cat="Hair Styling & Care">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dept 4: Mehndi Art (Henna) -->
+          <div class="dept-card tilt-card fade-up-element">
+            <div class="dept-header">
+              <div class="dept-icon-circle" aria-hidden="true">✨</div>
+              <div>
+                <h3 class="dept-title">Mehndi Art (Henna)</h3>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Traditional Lucknowi & modern Arabic designs</span>
+              </div>
+            </div>
+
+            <div class="dept-items-list">
+              <div class="alacarte-item">
+                <span class="alacarte-name">Basic Arabic Mehndi (Single Hand)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹250</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_mehndi_single" data-service-name="Basic Arabic Mehndi (Single Hand)" data-service-price="250" data-service-cat="Mehndi Art">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Designer Party Mehndi (Both Hands)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹600</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_mehndi_both" data-service-name="Designer Party Mehndi (Both Hands)" data-service-price="600" data-service-cat="Mehndi Art">+</button>
+                </div>
+              </div>
+
+              <div class="alacarte-item">
+                <span class="alacarte-name">Full Bridal Mehndi (Hands & Feet)</span>
+                <div class="alacarte-actions">
+                  <span class="alacarte-price">₹2,499 – ₹3,499</span>
+                  <button type="button" class="btn-add-mini" data-action="add-service" data-service-id="al_mehndi_bridal" data-service-name="Full Bridal Mehndi (Hands & Feet)" data-service-price="2499" data-service-cat="Mehndi Art">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hygiene & Safety Standards Pledge -->
+    <section class="pledge-section" id="hygiene">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="hygieneEyebrow">Studio Integrity</span>
+          <h2 class="section-title" data-i18n="hygieneTitle">The Agrima 5-Point Hygiene Pledge</h2>
+          <p class="section-lead" data-i18n="hygieneLead">
+            Your skin and health are sacred. We follow strict sterilization standards for all in-studio sessions.
+          </p>
+        </header>
+
+        <div class="pledge-grid">
+          <div class="pledge-box tilt-card fade-up-element">
+            <div class="pledge-icon-wrap" aria-hidden="true">🧴</div>
+            <h3 class="pledge-title">UV & Dry Heat Sterilization</h3>
+            <p class="pledge-desc">Every metal tweezer, scissor, and cuticle pusher is sterilized in medical UV dry heat cabinets between every single client.</p>
+          </div>
+
+          <div class="pledge-box tilt-card fade-up-element">
+            <div class="pledge-icon-wrap" aria-hidden="true">🪄</div>
+            <h3 class="pledge-title">Single-Use Applicators</h3>
+            <p class="pledge-desc">Zero double-dipping. We strictly utilize disposable mascara wands, lip gloss wands, and biodegradable facial wipes.</p>
+          </div>
+
+          <div class="pledge-box tilt-card fade-up-element">
+            <div class="pledge-icon-wrap" aria-hidden="true">💎</div>
+            <h3 class="pledge-title">100% Genuine Certified Brands</h3>
+            <p class="pledge-desc">Only certified cosmetics: MAC, Huda Beauty, Temptu Airbrush, Kryolan, and L'Oreal Professional. No duplicates ever.</p>
+          </div>
+
+          <div class="pledge-box tilt-card fade-up-element">
+            <div class="pledge-icon-wrap" aria-hidden="true">🫧</div>
+            <h3 class="pledge-title">Deep Sanitized Brushes</h3>
+            <p class="pledge-desc">Makeup brushes are deep-cleansed with antimicrobial washes and 99% alcohol sanitizers before touching any face.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews & Lucknow Trust -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="reviewsEyebrow">Real Experiences</span>
+          <h2 class="section-title" data-i18n="reviewsTitle">Loved by Lucknow Brides & Families</h2>
+          <p class="section-lead" data-i18n="reviewsLead">
+            Read what our clients say about our private studio atmosphere and makeup longevity.
+          </p>
+        </header>
+
+        <div class="reviews-grid">
+          <article class="review-card tilt-card fade-up-element">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-quote">
+              "I chose the Airbrush Bridal Makeup for my wedding in Gomti Nagar. The makeup stayed intact from the varmala until the vidai with zero creasing! Truly Lucknow's most professional studio."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">SA</div>
+              <div>
+                <div class="reviewer-name">Sneha Agarwal</div>
+                <div class="reviewer-loc">Gomti Nagar, Lucknow</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card tilt-card fade-up-element">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Their In-Studio only policy makes complete sense. The AC was perfect and the vanity mirror lighting helped me see every detail of my HD Party look. Fast WhatsApp booking made it so effortless."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">PV</div>
+              <div>
+                <div class="reviewer-name">Priyanka Verma</div>
+                <div class="reviewer-loc">Hazratganj, Lucknow</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card tilt-card fade-up-element">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Eyebrows for ₹40 and facial for ₹599 with such clean hygiene! Agrima Store is my permanent beauty parlour now. Very respectful team and zero fake rates."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">RS</div>
+              <div>
+                <div class="reviewer-name">Ritu Srivastava</div>
+                <div class="reviewer-loc">Aliganj, Lucknow</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ Accordion) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-lead">Everything you need to know about our studio appointments and booking policy.</p>
+        </header>
+
+        <div class="faq-accordion fade-up-element">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Do you provide home service for bridal or party makeup?</span>
+              <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                No, Agrima Makeup Store operates strictly on an <strong>in-studio model</strong> in Lucknow. This allows us to provide professional vanity lighting, climate-controlled comfort (preventing makeup sweat), and sterilized equipment that cannot be safely transported home-to-home.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How early should I book for Bridal or Engagement makeup?</span>
+              <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Wedding season dates in Lucknow fill up quickly. We recommend reserving your bridal slot at least 2 to 4 weeks in advance via WhatsApp to secure your desired time slot.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>What is the difference between HD Bridal and Airbrush Bridal Makeup?</span>
+              <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <strong>HD Bridal (₹11,999)</strong> uses ultra-fine liquid HD products blended with sponges for high-resolution cameras. <strong>Airbrush Bridal (₹14,999)</strong> utilizes a specialized Temptu compressor that mists micro-silicone droplets for a completely waterproof, 24-hour tear-proof, seamless finish.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Can I customize a package with multiple individual services?</span>
+              <svg class="faq-icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes! Simply click the <strong>+</strong> icon on any service card or a la carte item. You can combine waxing, facial, hair spa, and makeup in your booking cart and send the combined package directly to WhatsApp.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Location, Hours & Direct Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <header class="section-header fade-up-element">
+          <span class="section-eyebrow" data-i18n="contactEyebrow">Visit Our Studio</span>
+          <h2 class="section-title" data-i18n="contactTitle">Studio Location & Contact</h2>
+          <p class="section-lead" data-i18n="contactLead">We are located in Lucknow. Drop by during our operating hours or message us directly.</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Left: Studio Details Card -->
+          <div class="contact-info-card tilt-card fade-up-element">
+            <h3 style="font-size: 1.35rem; margin-bottom: 6px;">Agrima Makeup Store Studio</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Designed specifically for beauty, grooming, and bridal makeovers.
+            </p>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="info-label">Studio Address</div>
+                <div class="info-val">Shop #4, Commercial Complex, Hazratganj / Gomti Nagar, Lucknow, UP</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">⏰</div>
+              <div>
+                <div class="info-label">Operating Hours</div>
+                <div class="info-val">10:00 AM – 8:00 PM (Monday – Sunday)</div>
+                <span class="hours-badge">Open All 7 Days</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">💬</div>
+              <div>
+                <div class="info-label">Direct WhatsApp Booking</div>
+                <div class="info-val">+91 98765 43210</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://wa.me/919876543210?text=Hello%20Agrima%20Makeup%20Store%2C%20I%20would%20like%20to%20visit%20your%20studio%20in%20Lucknow." target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">
+                Chat on WhatsApp
+              </a>
+              <a href="tel:+919876543210" class="btn-secondary" style="padding: 9px 18px; font-size: 0.88rem;">
+                Call Studio
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Quick Inquiry Form -->
+          <div class="inquiry-card tilt-card fade-up-element">
+            <h3 style="font-size: 1.35rem; margin-bottom: 4px;" data-i18n="inqTitle">Quick Appointment Inquiry</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;" data-i18n="inqLead">
+              Submit your inquiry and we will immediately connect on WhatsApp to confirm your slot.
+            </p>
+
+            <form id="quickInquiryForm" class="inquiry-form" novalidate>
+              <div class="form-group">
+                <label for="inqName" class="form-label">Full Name *</label>
+                <input type="text" id="inqName" class="form-control" placeholder="e.g. Ananya Sharma" required maxlength="60">
+              </div>
+
+              <div class="form-group">
+                <label for="inqPhone" class="form-label">WhatsApp Mobile Number (10 digits) *</label>
+                <input type="tel" id="inqPhone" class="form-control" placeholder="e.g. 9876543210" required maxlength="12" pattern="^[6-9]\d{9}$">
+                <span class="form-hint">Enter 10-digit Indian mobile number</span>
+              </div>
+
+              <div class="form-group">
+                <label for="inqService" class="form-label">Primary Service Interested In</label>
+                <select id="inqService" class="form-control">
+                  <option value="Party Makeup (₹1,499)">Party Makeup (₹1,499)</option>
+                  <option value="HD Party Makeup (₹2,999)">HD Party Makeup (₹2,999)</option>
+                  <option value="Engagement Makeup (₹4,999)">Engagement Makeup (₹4,999)</option>
+                  <option value="Basic Bridal Makeup (₹7,999)">Basic Bridal Makeup (₹7,999)</option>
+                  <option value="HD Bridal Makeup (₹11,999)">HD Bridal Makeup (₹11,999)</option>
+                  <option value="Airbrush Bridal Makeup (₹14,999)">Airbrush Bridal Makeup (₹14,999)</option>
+                  <option value="Skincare & Facials">Skincare & Facials</option>
+                  <option value="Threading & Waxing">Threading & Waxing</option>
+                  <option value="Mehndi Art">Mehndi Art</option>
+                  <option value="Hair Styling & Spa">Hair Styling & Spa</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inqDate" class="form-label">Preferred Date</label>
+                <input type="date" id="inqDate" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="inqMessage" class="form-label">Special Request or Questions</label>
+                <textarea id="inqMessage" class="form-control" rows="2" placeholder="e.g. Morning slot preferred, bridal inquiry" maxlength="300"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 6px;">
+                <span data-i18n="inqSubmit">Send Booking Inquiry on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="brand-symbol" aria-hidden="true" style="width: 36px; height: 36px; font-size: 1.1rem;">A</div>
+            <span class="brand-title" style="color: #ffffff; font-size: 1.25rem;">AGRIMA</span>
+          </div>
+          <p>
+            Lucknow's premier beauty destination specializing in Budget, Premium, and Royal Bridal artistry. 100% in-studio vanity services with transparent rates and hospital-grade hygiene.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Signature Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="#pillarBudget">Budget Services (₹30 – ₹1,499)</a></li>
+            <li><a href="#pillarPremium">Premium Services (₹1,499 – ₹4,999)</a></li>
+            <li><a href="#pillarBridal">Bridal Makeup Suite (₹7,999 – ₹14,999)</a></li>
+            <li><a href="#individualServices">A La Carte Salon Menu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Studio Policies</h4>
+          <ul class="footer-links">
+            <li><a href="#policy">100% In-Studio (No Home Visits)</a></li>
+            <li><a href="#hygiene">5-Point Hygiene Pledge</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#contact">Studio Timings: 10 AM – 8 PM</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Studio Address</h4>
+          <p style="color: #a49b95; font-size: 0.85rem; line-height: 1.6; margin-bottom: 14px;">
+            Shop #4, Commercial Hub, Hazratganj / Gomti Nagar, Lucknow, Uttar Pradesh.
+          </p>
+          <div style="font-size: 0.85rem; color: #ffffff; font-weight: 600;">
+            WhatsApp: +91 98765 43210
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Agrima Makeup Store</strong>. All Rights Reserved. Tailored for Lucknow, UP.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <span>In-Studio Only</span>
+          <span>•</span>
+          <span>Zero Home Visits</span>
+          <span>•</span>
+          <span>Encrypted WhatsApp Dispatch</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Playful Floating WhatsApp Tooltip Bubble -->
+  <div class="wa-floating-bubble" id="waFloatingBubble" role="status" aria-live="polite">
+    <span style="font-size: 1.15rem;">💬</span>
+    <span id="waFloatingTooltipText">👋 In-Studio bookings open! Tap to chat.</span>
+  </div>
+
+  <!-- Pulsing Fixed WhatsApp Button -->
+  <a href="https://wa.me/919876543210?text=Hello%20Agrima%20Makeup%20Store%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment%20at%20your%20Lucknow%20studio." class="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with Agrima Makeup Store on WhatsApp">
+    <div class="whatsapp-pulse-ring" aria-hidden="true"></div>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/>
+    </svg>
+  </a>
+
+  <!-- Backdrop Overlay for Drawers -->
+  <div class="backdrop-overlay" id="backdropOverlay"></div>
+
+  <!-- Multi-Service Booking Drawer & Cart Modal -->
+  <div class="booking-drawer" id="bookingDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 1.2rem;">🌸</span>
+        <h3 id="drawerTitle" class="drawer-title" data-i18n="drawerTitle">Your Studio Booking</h3>
+      </div>
+      <button type="button" class="drawer-close-btn" id="closeCartDrawer" aria-label="Close booking drawer">&times;</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Items List -->
+      <div>
+        <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">
+          Selected Services
+        </div>
+        
+        <div id="cartEmptyState" class="cart-empty-state">
+          <div style="font-size: 2.2rem; margin-bottom: 8px;">💅</div>
+          <p style="font-size: 0.95rem; font-weight: 600; color: var(--dark); margin-bottom: 4px;" data-i18n="cartEmptyTitle">Your booking list is empty</p>
+          <p style="font-size: 0.82rem; color: var(--text-muted);" data-i18n="cartEmptySub">
+            Click the <strong>+</strong> button on any service to add it here.
+          </p>
+        </div>
+
+        <div class="cart-items-container" id="cartItemsList"></div>
+      </div>
+
+      <!-- Price Tally & Booking Form -->
+      <form id="drawerBookingForm" class="drawer-booking-form" style="display: none;" novalidate>
+        <div class="drawer-total-box">
+          <span class="drawer-total-label" data-i18n="drawerTotal">Estimated Total</span>
+          <span class="drawer-total-val" id="drawerTotalVal">₹0</span>
+        </div>
+
+        <div class="form-group">
+          <label for="drawerCustName" class="form-label">Your Name *</label>
+          <input type="text" id="drawerCustName" class="form-control" placeholder="e.g. Radhika Sharma" required maxlength="60">
+        </div>
+
+        <div class="form-group">
+          <label for="drawerCustPhone" class="form-label">WhatsApp Number *</label>
+          <input type="tel" id="drawerCustPhone" class="form-control" placeholder="e.g. 9876543210" required maxlength="12" pattern="^[6-9]\d{9}$">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <div class="form-group">
+            <label for="drawerCustDate" class="form-label">Preferred Date</label>
+            <input type="date" id="drawerCustDate" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="drawerCustTime" class="form-label">Preferred Time</label>
+            <select id="drawerCustTime" class="form-control">
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:30 AM">11:30 AM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="02:30 PM">02:30 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="05:30 PM">05:30 PM</option>
+              <option value="07:00 PM">07:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="drawerCustNotes" class="form-label">Special Notes (Optional)</label>
+          <input type="text" id="drawerCustNotes" class="form-control" placeholder="e.g. sensitive skin, bridal trial" maxlength="150">
+        </div>
+
+        <div style="font-size: 0.75rem; color: var(--text-muted); background: var(--surface-body); padding: 8px 10px; border-radius: 6px; border: 1px dashed var(--border-subtle);">
+          📍 <strong>In-Studio Policy:</strong> All appointments take place at our Lucknow studio.
+        </div>
+
+        <button type="submit" class="btn-confirm-wa-booking">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.072-.494-1.631-.678-2.678-2.339-2.759-2.449-.081-.109-.654-.871-.654-1.662 0-.79.413-1.178.558-1.336.145-.158.318-.198.424-.198.106 0 .212.002.304.006.098.005.228-.037.357.273.132.318.45 1.096.488 1.177.039.081.065.176.013.281-.051.106-.077.172-.153.264-.077.092-.162.205-.231.275-.078.078-.159.163-.068.319.091.156.404.667.868 1.08 1.116.994 2.057 1.303 2.348 1.448.291.144.463.12.635-.077.173-.198.74-1.025.938-1.378.198-.352.396-.294.666-.194.27.1.1.724 1.705.868.145.039.24.059.276.117.036.059.036.342-.108.747z"/></svg>
+          <span data-i18n="drawerConfirm">Confirm & Send on WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Primary Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
